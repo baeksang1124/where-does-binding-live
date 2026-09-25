@@ -1,0 +1,2081 @@
+{
+  "head_sets": {
+    "top1": [
+      "down_blocks.2.attentions.1.transformer_blocks.0.attn2|h4"
+    ],
+    "top16": [
+      "down_blocks.2.attentions.1.transformer_blocks.0.attn2|h4",
+      "down_blocks.2.attentions.0.transformer_blocks.0.attn2|h3",
+      "down_blocks.2.attentions.0.transformer_blocks.0.attn2|h2",
+      "down_blocks.2.attentions.0.transformer_blocks.0.attn2|h5",
+      "up_blocks.1.attentions.2.transformer_blocks.0.attn2|h6",
+      "down_blocks.2.attentions.0.transformer_blocks.0.attn2|h6",
+      "down_blocks.2.attentions.1.transformer_blocks.0.attn2|h0",
+      "down_blocks.2.attentions.1.transformer_blocks.0.attn2|h1",
+      "mid_block.attentions.0.transformer_blocks.0.attn2|h1",
+      "up_blocks.1.attentions.0.transformer_blocks.0.attn2|h1",
+      "down_blocks.1.attentions.0.transformer_blocks.0.attn2|h6",
+      "down_blocks.2.attentions.0.transformer_blocks.0.attn2|h7",
+      "mid_block.attentions.0.transformer_blocks.0.attn2|h0",
+      "mid_block.attentions.0.transformer_blocks.0.attn2|h3",
+      "mid_block.attentions.0.transformer_blocks.0.attn2|h4",
+      "up_blocks.2.attentions.2.transformer_blocks.0.attn2|h4"
+    ]
+  },
+  "conds": [
+    "FULL",
+    "PATTERN",
+    "VALUE",
+    "BASELINE"
+  ],
+  "metrics": [
+    "proper",
+    "bleed",
+    "collapse",
+    "old"
+  ],
+  "n_pairs": 35,
+  "agg": {
+    "top1": {
+      "FULL": {
+        "proper": 0.11428571428571428,
+        "bleed": 0.22857142857142856,
+        "collapse": 0.6571428571428571,
+        "old": 0.35714285714285715
+      },
+      "PATTERN": {
+        "proper": 0.11428571428571428,
+        "bleed": 0.17142857142857143,
+        "collapse": 0.6857142857142857,
+        "old": 0.3
+      },
+      "VALUE": {
+        "proper": 0.0,
+        "bleed": 0.02857142857142857,
+        "collapse": 0.5428571428571428,
+        "old": 0.04285714285714286
+      },
+      "BASELINE": {
+        "proper": 0.0,
+        "bleed": 0.02857142857142857,
+        "collapse": 0.6,
+        "old": 0.02857142857142857
+      }
+    },
+    "top16": {
+      "FULL": {
+        "proper": 0.17142857142857143,
+        "bleed": 0.6857142857142857,
+        "collapse": 0.6285714285714286,
+        "old": 0.8571428571428571
+      },
+      "PATTERN": {
+        "proper": 0.14285714285714285,
+        "bleed": 0.17142857142857143,
+        "collapse": 0.6571428571428571,
+        "old": 0.32857142857142857
+      },
+      "VALUE": {
+        "proper": 0.02857142857142857,
+        "bleed": 0.4,
+        "collapse": 0.6857142857142857,
+        "old": 0.4857142857142857
+      },
+      "BASELINE": {
+        "proper": 0.0,
+        "bleed": 0.02857142857142857,
+        "collapse": 0.6,
+        "old": 0.02857142857142857
+      }
+    }
+  },
+  "per_pair": {
+    "top1": {
+      "FULL": [
+        {
+          "a1": "blue",
+          "a2": "no",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "none",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "no",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "gray",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.5
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "yellow",
+          "proper": 1,
+          "bleed": 0,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "blue",
+          "proper": 1,
+          "bleed": 0,
+          "old": 1.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "red",
+          "proper": 1,
+          "bleed": 0,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "green",
+          "a2": "silver",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "white",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "yellow",
+          "proper": 1,
+          "bleed": 0,
+          "old": 1.0
+        }
+      ],
+      "PATTERN": [
+        {
+          "a1": "blue",
+          "a2": "no",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "none",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "no",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "gray",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.5
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "green",
+          "proper": 1,
+          "bleed": 0,
+          "old": 1.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "yellow",
+          "proper": 1,
+          "bleed": 0,
+          "old": 1.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "blue",
+          "proper": 1,
+          "bleed": 0,
+          "old": 1.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "red",
+          "proper": 1,
+          "bleed": 0,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "brown",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "brown",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        }
+      ],
+      "VALUE": [
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "no",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "there is no cup in the image.",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "black",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.5
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "white",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        }
+      ],
+      "BASELINE": [
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "no",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "there is no cup in the image.",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "white",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "white",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        }
+      ]
+    },
+    "top16": {
+      "FULL": [
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "green",
+          "proper": 1,
+          "bleed": 0,
+          "old": 1.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "red",
+          "proper": 1,
+          "bleed": 0,
+          "old": 1.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "blue",
+          "proper": 1,
+          "bleed": 0,
+          "old": 1.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "red",
+          "proper": 1,
+          "bleed": 0,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "brown",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "red",
+          "a2": "white",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "blue",
+          "proper": 1,
+          "bleed": 0,
+          "old": 1.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "red",
+          "proper": 1,
+          "bleed": 0,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "green",
+          "a2": "no",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "no",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        }
+      ],
+      "PATTERN": [
+        {
+          "a1": "blue",
+          "a2": "red",
+          "proper": 1,
+          "bleed": 0,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "white",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "red",
+          "proper": 1,
+          "bleed": 0,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "red",
+          "proper": 1,
+          "bleed": 0,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "orange",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.5
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "black",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "white",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "white",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "green",
+          "a2": "red",
+          "proper": 1,
+          "bleed": 0,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "white",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "yellow",
+          "proper": 1,
+          "bleed": 0,
+          "old": 1.0
+        }
+      ],
+      "VALUE": [
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "teal",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.5
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "red",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "green",
+          "a2": "white",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "white",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "white",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "orange",
+          "a2": "orange",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.5
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "green",
+          "proper": 1,
+          "bleed": 0,
+          "old": 1.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "white",
+          "a2": "white",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.5
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "no cup",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.5
+        }
+      ],
+      "BASELINE": [
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "no",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "there is no cup in the image.",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "white",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 1,
+          "old": 1.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "yellow",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "red",
+          "a2": "red",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "blue",
+          "a2": "white",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "green",
+          "a2": "green",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        },
+        {
+          "a1": "yellow",
+          "a2": "blue",
+          "proper": 0,
+          "bleed": 0,
+          "old": 0.0
+        }
+      ]
+    }
+  },
+  "grid_pair_ids": [
+    0,
+    10,
+    14,
+    22
+  ],
+  "verdict": "VALUE recovery is mostly COLOR-BLEED (low proper-rebind, bleed-dominated) while PATTERN carries proper-rebind => BINDING IS ROUTING (clean headline)."
+}

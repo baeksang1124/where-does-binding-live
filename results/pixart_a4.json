@@ -1,0 +1,38 @@
+{
+  "top1": "transformer_blocks.13.attn2|h7",
+  "n": 11,
+  "sets": {
+    "top1": {
+      "means": {
+        "FULL": 0.36363636363636365,
+        "PATTERN": 0.0,
+        "VALUE": 0.18181818181818182,
+        "BASELINE": 0.0
+      },
+      "pattern_minus_value": -0.18181818181818182,
+      "ci": [
+        -0.45454545454545453,
+        0.0
+      ],
+      "frac_routing": 0.0,
+      "frac_content": 0.5,
+      "verdict": "MIXED"
+    },
+    "top2": {
+      "means": {
+        "FULL": 0.5,
+        "PATTERN": 0.09090909090909091,
+        "VALUE": 0.36363636363636365,
+        "BASELINE": 0.0
+      },
+      "pattern_minus_value": -0.2727272727272727,
+      "ci": [
+        -0.5454545454545454,
+        0.0
+      ],
+      "frac_routing": 0.18181818181818182,
+      "frac_content": 0.7272727272727273,
+      "verdict": "CONTENT (OV)"
+    }
+  }
+}

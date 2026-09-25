@@ -1,0 +1,12 @@
+{
+  "n": 8,
+  "qwen": {
+    "head": 0.0,
+    "stream": 1.0
+  },
+  "llava": {
+    "head": 0.0,
+    "stream": 1.0
+  },
+  "agreement": 1.0
+}

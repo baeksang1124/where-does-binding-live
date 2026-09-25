@@ -1,0 +1,3729 @@
+{
+  "n_qualified": 35,
+  "qualified": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    34,
+    35
+  ],
+  "steps": 28,
+  "px": 512,
+  "swap_all_flip": 0.9714285714285714,
+  "swap_all_proper": 0.9428571428571428,
+  "block_mean_flip": {
+    "0": 0.0,
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.014285714285714285,
+    "4": 0.0,
+    "5": 0.02857142857142857,
+    "6": 0.014285714285714285,
+    "7": 0.014285714285714285,
+    "8": 0.014285714285714285,
+    "9": 0.11428571428571428,
+    "10": 0.0,
+    "11": 0.0,
+    "12": 0.0,
+    "13": 0.0,
+    "14": 0.0,
+    "15": 0.0,
+    "16": 0.0,
+    "17": 0.0,
+    "18": 0.014285714285714285,
+    "19": 0.0,
+    "20": 0.0,
+    "21": 0.0,
+    "22": 0.0,
+    "23": 0.0
+  },
+  "block_mean_proper": {
+    "0": 0.0,
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0,
+    "4": 0.0,
+    "5": 0.0,
+    "6": 0.0,
+    "7": 0.0,
+    "8": 0.0,
+    "9": 0.02857142857142857,
+    "10": 0.0,
+    "11": 0.0,
+    "12": 0.0,
+    "13": 0.0,
+    "14": 0.0,
+    "15": 0.0,
+    "16": 0.0,
+    "17": 0.0,
+    "18": 0.0,
+    "19": 0.0,
+    "20": 0.0,
+    "21": 0.0,
+    "22": 0.0,
+    "23": 0.0
+  },
+  "ranked_blocks": [
+    9,
+    5,
+    3,
+    6,
+    7,
+    8,
+    18,
+    0,
+    1,
+    2,
+    4,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "per_pair": [
+    {
+      "id": 0,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 1,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 2,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.5,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 3,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.5,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 4,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 5,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 6,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 7,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 8,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.5,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 9,
+      "full_flip": 0.5,
+      "full_proper": 0,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.5,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 10,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 11,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.5,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 12,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 13,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 14,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 15,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 16,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 17,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 18,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 19,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.5,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 20,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 21,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.5,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.5,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.5,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.5,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.5,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.5,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 22,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 1.0,
+          "proper": 1
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 23,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 24,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 25,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 26,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 27,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 28,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 29,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 30,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 31,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 32,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 34,
+      "full_flip": 1.0,
+      "full_proper": 1,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    },
+    {
+      "id": 35,
+      "full_flip": 0.5,
+      "full_proper": 0,
+      "blocks": {
+        "0": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "1": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "2": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "3": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "4": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "5": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "6": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "7": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "8": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "9": {
+          "flip": 0.5,
+          "proper": 0
+        },
+        "10": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "11": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "12": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "13": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "14": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "15": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "16": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "17": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "18": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "19": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "20": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "21": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "22": {
+          "flip": 0.0,
+          "proper": 0
+        },
+        "23": {
+          "flip": 0.0,
+          "proper": 0
+        }
+      }
+    }
+  ]
+}

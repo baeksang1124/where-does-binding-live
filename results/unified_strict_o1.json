@@ -1,0 +1,78 @@
+{
+ "note": "unified strict o1 (1 iff o1 reads the swapped color c2, else 0), recomputed from dual_grade_full.json raw answers by scripts/05_followup_controls/unified_strict_o1.py; single-model CIs are exact percentile-bootstrap (binomial), differences 1e5-resample percentile bootstrap (seed 1234) with P(diff>0). Source for Table 1 unified rows.",
+ "sd15": {
+  "qwen_strict": [
+   0.325,
+   0.175,
+   0.475
+  ],
+  "n": 40,
+  "llava_strict": [
+   0.275,
+   0.15,
+   0.425
+  ]
+ },
+ "pixart": {
+  "qwen_strict": [
+   0.11538461538461539,
+   0.0,
+   0.23076923076923078
+  ],
+  "n": 26,
+  "llava_strict": [
+   0.19230769230769232,
+   0.038461538461538464,
+   0.34615384615384615
+  ]
+ },
+ "sd3": {
+  "qwen_strict": [
+   0.02666666666666667,
+   0.0,
+   0.06666666666666667
+  ],
+  "n": 75,
+  "llava_strict": [
+   0.013333333333333334,
+   0.0,
+   0.04
+  ]
+ },
+ "qwen_diff_sd15_sd3": [
+  0.29833333333333334,
+  0.14833333333333332,
+  0.45,
+  0.99999
+ ],
+ "qwen_diff_sd15_pixart": [
+  0.20961538461538462,
+  0.019230769230769218,
+  0.39807692307692305,
+  0.98288
+ ],
+ "qwen_diff_pixart_sd3": [
+  0.08871794871794872,
+  -0.02666666666666667,
+  0.2292307692307692,
+  0.91041
+ ],
+ "llava_diff_sd15_sd3": [
+  0.2616666666666667,
+  0.125,
+  0.41000000000000003,
+  0.99995
+ ],
+ "llava_diff_sd15_pixart": [
+  0.0826923076923077,
+  -0.13076923076923078,
+  0.2846153846153846,
+  0.7836
+ ],
+ "llava_diff_pixart_sd3": [
+  0.17897435897435898,
+  0.038461538461538464,
+  0.34615384615384615,
+  0.99456
+ ]
+}

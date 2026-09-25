@@ -1,0 +1,50 @@
+{
+  "bs": [
+    0,
+    3,
+    6,
+    9,
+    11,
+    13,
+    15,
+    18,
+    21
+  ],
+  "subset": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "normal_presence": 2.0,
+  "normal_bind": 1.0,
+  "presence": {
+    "0": 1.1,
+    "3": 1.6,
+    "6": 1.8,
+    "9": 2.0,
+    "11": 1.9,
+    "13": 2.0,
+    "15": 2.0,
+    "18": 2.0,
+    "21": 2.0
+  },
+  "bind": {
+    "0": 0.1,
+    "3": 0.0,
+    "6": 0.2,
+    "9": 0.3,
+    "11": 0.6,
+    "13": 0.9,
+    "15": 1.0,
+    "18": 1.0,
+    "21": 1.0
+  },
+  "verdict": "BINDING-SPECIFIC: at freeze-from-b=6, objects still render (presence>=1.7) but binding is degraded (<0.5) -> the freeze effect is not general degradation."
+}

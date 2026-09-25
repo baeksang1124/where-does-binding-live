@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+results/figs/
+results/**/*.png
+results/*.log
+results/*.out
+results/*.stdout
+.omc/

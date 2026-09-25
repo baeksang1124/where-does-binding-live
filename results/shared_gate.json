@@ -1,0 +1,722 @@
+{
+  "reexamined": [
+    5000,
+    5001,
+    5003,
+    5004,
+    5007,
+    5012,
+    5013,
+    5017,
+    5018,
+    5022,
+    5027,
+    5029,
+    5030,
+    5031,
+    5032,
+    5033,
+    5034,
+    5035,
+    5038,
+    5040,
+    5042,
+    5043,
+    5044,
+    5046,
+    5047,
+    5051,
+    5052,
+    5054,
+    5055,
+    5057,
+    5059,
+    5061,
+    5064,
+    5066,
+    5071,
+    5072,
+    5075,
+    5076,
+    5082,
+    5083
+  ],
+  "shared_gate_pass": [
+    5061,
+    5072,
+    5083
+  ],
+  "n_shared": 3,
+  "detail": {
+    "5000": {
+      "clean": [
+        "red",
+        "red"
+      ],
+      "full_swap": [
+        "blue",
+        "red"
+      ],
+      "truth": [
+        "red",
+        "blue"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5001": {
+      "clean": [
+        "red",
+        "red"
+      ],
+      "full_swap": [
+        "blue",
+        "red"
+      ],
+      "truth": [
+        "red",
+        "blue"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5003": {
+      "clean": [
+        "red",
+        "other"
+      ],
+      "full_swap": [
+        "blue",
+        "red"
+      ],
+      "truth": [
+        "red",
+        "blue"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5004": {
+      "clean": [
+        "red",
+        "red"
+      ],
+      "full_swap": [
+        "blue",
+        "red"
+      ],
+      "truth": [
+        "red",
+        "blue"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5007": {
+      "clean": [
+        "red",
+        "red"
+      ],
+      "full_swap": [
+        "green",
+        "green"
+      ],
+      "truth": [
+        "red",
+        "green"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5012": {
+      "clean": [
+        "red",
+        "green"
+      ],
+      "full_swap": [
+        "green",
+        "green"
+      ],
+      "truth": [
+        "red",
+        "green"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5013": {
+      "clean": [
+        "red",
+        "red"
+      ],
+      "full_swap": [
+        "green",
+        "red"
+      ],
+      "truth": [
+        "red",
+        "green"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5017": {
+      "clean": [
+        "red",
+        "yellow"
+      ],
+      "full_swap": [
+        "yellow",
+        "other"
+      ],
+      "truth": [
+        "red",
+        "yellow"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5018": {
+      "clean": [
+        "red",
+        "other"
+      ],
+      "full_swap": [
+        "yellow",
+        "other"
+      ],
+      "truth": [
+        "red",
+        "yellow"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5022": {
+      "clean": [
+        "blue",
+        "blue"
+      ],
+      "full_swap": [
+        "red",
+        "blue"
+      ],
+      "truth": [
+        "blue",
+        "red"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5027": {
+      "clean": [
+        "blue",
+        "red"
+      ],
+      "full_swap": [
+        "red",
+        "red"
+      ],
+      "truth": [
+        "blue",
+        "red"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5029": {
+      "clean": [
+        "blue",
+        "blue"
+      ],
+      "full_swap": [
+        "green",
+        "blue"
+      ],
+      "truth": [
+        "blue",
+        "green"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5030": {
+      "clean": [
+        "blue",
+        "blue"
+      ],
+      "full_swap": [
+        "green",
+        "green"
+      ],
+      "truth": [
+        "blue",
+        "green"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5031": {
+      "clean": [
+        "blue",
+        "blue"
+      ],
+      "full_swap": [
+        "green",
+        "green"
+      ],
+      "truth": [
+        "blue",
+        "green"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5032": {
+      "clean": [
+        "blue",
+        "blue"
+      ],
+      "full_swap": [
+        "green",
+        "green"
+      ],
+      "truth": [
+        "blue",
+        "green"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5033": {
+      "clean": [
+        "blue",
+        "blue"
+      ],
+      "full_swap": [
+        "green",
+        "green"
+      ],
+      "truth": [
+        "blue",
+        "green"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5034": {
+      "clean": [
+        "blue",
+        "blue"
+      ],
+      "full_swap": [
+        "green",
+        "green"
+      ],
+      "truth": [
+        "blue",
+        "green"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5035": {
+      "clean": [
+        "blue",
+        "blue"
+      ],
+      "full_swap": [
+        "yellow",
+        "blue"
+      ],
+      "truth": [
+        "blue",
+        "yellow"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5038": {
+      "clean": [
+        "blue",
+        "yellow"
+      ],
+      "full_swap": [
+        "yellow",
+        "yellow"
+      ],
+      "truth": [
+        "blue",
+        "yellow"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5040": {
+      "clean": [
+        "blue",
+        "yellow"
+      ],
+      "full_swap": [
+        "yellow",
+        "yellow"
+      ],
+      "truth": [
+        "blue",
+        "yellow"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5042": {
+      "clean": [
+        "green",
+        "green"
+      ],
+      "full_swap": [
+        "red",
+        "red"
+      ],
+      "truth": [
+        "green",
+        "red"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5043": {
+      "clean": [
+        "green",
+        "green"
+      ],
+      "full_swap": [
+        "red",
+        "green"
+      ],
+      "truth": [
+        "green",
+        "red"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5044": {
+      "clean": [
+        "green",
+        "red"
+      ],
+      "full_swap": [
+        "red",
+        "red"
+      ],
+      "truth": [
+        "green",
+        "red"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5046": {
+      "clean": [
+        "green",
+        "red"
+      ],
+      "full_swap": [
+        "red",
+        "red"
+      ],
+      "truth": [
+        "green",
+        "red"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5047": {
+      "clean": [
+        "green",
+        "green"
+      ],
+      "full_swap": [
+        "red",
+        "red"
+      ],
+      "truth": [
+        "green",
+        "red"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5051": {
+      "clean": [
+        "green",
+        "green"
+      ],
+      "full_swap": [
+        "blue",
+        "blue"
+      ],
+      "truth": [
+        "green",
+        "blue"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5052": {
+      "clean": [
+        "green",
+        "green"
+      ],
+      "full_swap": [
+        "blue",
+        "blue"
+      ],
+      "truth": [
+        "green",
+        "blue"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5054": {
+      "clean": [
+        "green",
+        "blue"
+      ],
+      "full_swap": [
+        "blue",
+        "blue"
+      ],
+      "truth": [
+        "green",
+        "blue"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5055": {
+      "clean": [
+        "green",
+        "green"
+      ],
+      "full_swap": [
+        "blue",
+        "green"
+      ],
+      "truth": [
+        "green",
+        "blue"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5057": {
+      "clean": [
+        "green",
+        "green"
+      ],
+      "full_swap": [
+        "yellow",
+        "yellow"
+      ],
+      "truth": [
+        "green",
+        "yellow"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5059": {
+      "clean": [
+        "green",
+        "green"
+      ],
+      "full_swap": [
+        "yellow",
+        "green"
+      ],
+      "truth": [
+        "green",
+        "yellow"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5061": {
+      "clean": [
+        "green",
+        "yellow"
+      ],
+      "full_swap": [
+        "yellow",
+        "green"
+      ],
+      "truth": [
+        "green",
+        "yellow"
+      ],
+      "one_obj": true,
+      "two_obj": true
+    },
+    "5064": {
+      "clean": [
+        "yellow",
+        "other"
+      ],
+      "full_swap": [
+        "red",
+        "red"
+      ],
+      "truth": [
+        "yellow",
+        "red"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5066": {
+      "clean": [
+        "yellow",
+        "red"
+      ],
+      "full_swap": [
+        "red",
+        "red"
+      ],
+      "truth": [
+        "yellow",
+        "red"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5071": {
+      "clean": [
+        "yellow",
+        "yellow"
+      ],
+      "full_swap": [
+        "blue",
+        "other"
+      ],
+      "truth": [
+        "yellow",
+        "blue"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5072": {
+      "clean": [
+        "yellow",
+        "blue"
+      ],
+      "full_swap": [
+        "blue",
+        "yellow"
+      ],
+      "truth": [
+        "yellow",
+        "blue"
+      ],
+      "one_obj": true,
+      "two_obj": true
+    },
+    "5075": {
+      "clean": [
+        "yellow",
+        "yellow"
+      ],
+      "full_swap": [
+        "blue",
+        "yellow"
+      ],
+      "truth": [
+        "yellow",
+        "blue"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5076": {
+      "clean": [
+        "yellow",
+        "yellow"
+      ],
+      "full_swap": [
+        "blue",
+        "blue"
+      ],
+      "truth": [
+        "yellow",
+        "blue"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5082": {
+      "clean": [
+        "yellow",
+        "other"
+      ],
+      "full_swap": [
+        "green",
+        "green"
+      ],
+      "truth": [
+        "yellow",
+        "green"
+      ],
+      "one_obj": true,
+      "two_obj": false
+    },
+    "5083": {
+      "clean": [
+        "yellow",
+        "green"
+      ],
+      "full_swap": [
+        "green",
+        "yellow"
+      ],
+      "truth": [
+        "yellow",
+        "green"
+      ],
+      "one_obj": true,
+      "two_obj": true
+    }
+  },
+  "shared_gate_intersection": [
+    5072
+  ],
+  "SD1.5_shared": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "PixArt_shared": [
+    0.5,
+    0.5,
+    0.5
+  ],
+  "SD3.5_shared": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "paired_SD15_minus_SD35_shared": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "paired_SD15_minus_PixArt_shared": [
+    0.5,
+    0.5,
+    0.5,
+    1.0
+  ]
+}

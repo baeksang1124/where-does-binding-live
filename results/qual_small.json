@@ -1,0 +1,41 @@
+[
+  {
+    "id": 0,
+    "seed": 1000,
+    "clean": "a red cube next to a blue sphere",
+    "swapped": "a blue cube next to a red sphere",
+    "c1": "red",
+    "o1": "cube",
+    "c2": "blue",
+    "o2": "sphere",
+    "grade_obj": "cube",
+    "clean_color": "red",
+    "swap_color": "blue"
+  },
+  {
+    "id": 1,
+    "seed": 101001,
+    "clean": "a blue cube next to a red sphere",
+    "swapped": "a red cube next to a blue sphere",
+    "c1": "blue",
+    "o1": "cube",
+    "c2": "red",
+    "o2": "sphere",
+    "grade_obj": "cube",
+    "clean_color": "blue",
+    "swap_color": "red"
+  },
+  {
+    "id": 2,
+    "seed": 1002,
+    "clean": "a green cube next to a yellow sphere",
+    "swapped": "a yellow cube next to a green sphere",
+    "c1": "green",
+    "o1": "cube",
+    "c2": "yellow",
+    "o2": "sphere",
+    "grade_obj": "cube",
+    "clean_color": "green",
+    "swap_color": "yellow"
+  }
+]

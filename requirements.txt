@@ -1,0 +1,12 @@
+torch==2.6.0
+torchvision==0.21.0
+diffusers==0.38.0
+transformers==4.57.1
+accelerate==1.11.0
+sentencepiece==0.2.1
+numpy==1.24.3
+scipy==1.15.3
+pillow
+matplotlib==3.10.9
+protobuf
+bitsandbytes==0.49.2
