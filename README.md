@@ -112,7 +112,7 @@ The figure script `scripts/figures/cr_figures.py`, `scripts/05_followup_controls
 | §8, shared-gate comparison | `04_additional_controls/shared_gate.py`, `holdout_purity.py` | `shared_gate.json`, `holdout_purity.json` |
 | Derived statistics (merges, splits, SDs, sensitivity rows) | `05_followup_controls/derived_stats.py` (CPU, from the shipped JSONs) | `derived_stats.json` |
 | Supplementary, key-only vs. value-only decomposition | `01_selection_sweeps/a4_decomp.py`, `a4_pixart.py` | `a4_decomp.json`, `pixart_a4.json` |
-| Figures | `figures/cr_figures.py` (Fig. 1: numbers typed into the script; Figs. 2–4: read from the result JSONs); `figures/f5_candidates.py` (GPU; renders held-out candidate pairs at the measurement protocol and re-grades them) then `figures/f5_compose.py` (Fig. 5, pair 5029) | `results/figs/` |
+| Figures | `figures/cr_figures.py` (Fig. 1: numbers typed into the script; Figs. 2–4: read from the result JSONs); `figures/f5_candidates.py` (GPU; renders held-out candidate pairs at the measurement protocol and re-grades them) and `figures/f5_pixart_tiles.py` (GPU; PixArt-Σ row) then `figures/f5_compose.py` (Fig. 5: pair 5029, `F5_ROWS=sd15,pixart,sd3 F5_FS=8.5`) | `results/figs/` |
 
 ## Citation
 
