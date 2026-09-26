@@ -17,10 +17,10 @@ import matplotlib.pyplot as plt
 from PIL import Image
 
 DIRS = ["results/figs/f5_candidates", "results/figs/f5_candidates_sd15extra"]
-SD15 = int(os.environ.get("F5_SD15_ID", 5029))
+SD15 = int(os.environ.get("F5_SD15_ID", 16))    # base-set pair, tiles from f5_sd15_tiles.py
 SD3 = int(os.environ.get("F5_SD3_ID", 5029))
 OUT = os.environ.get("F5_OUT", "results/figs/F5_grids.pdf")
-FS = float(os.environ.get("F5_FS", 7))   # label size; keep FS x (include width / figure width) >= 6 pt
+FS = float(os.environ.get("F5_FS", 8.5))   # label size; keep FS x (include width / figure width) >= 6 pt
 COLS = ["clean", "top-1\nhead swap", "text stream\nblocks 9–15", "swapped\nprompt"]
 
 
@@ -39,7 +39,7 @@ ALL = {"sd15": ("SD1.5 (UNet)", SD15, "sd15", ["clean", "top1", None, "target"],
                   ["", "no flip", "n/a\n(isolated\ncross-attention)", ""]),
        "sd3": ("SD3.5 (MM-DiT)", SD3, "sd3", ["clean", "top1", "win915", "target"],
                ["", "no flip", "flips", ""])}
-rows = [ALL[k] for k in os.environ.get("F5_ROWS", "sd15,sd3").split(",")]
+rows = [ALL[k] for k in os.environ.get("F5_ROWS", "sd15,pixart,sd3").split(",")]
 
 fig, axes = plt.subplots(len(rows), 4, figsize=(4.9, 0.25 + 1.25 * len(rows)))
 for r, (name, pid, model, arms, notes) in enumerate(rows):
