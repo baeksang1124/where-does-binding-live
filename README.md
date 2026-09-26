@@ -35,7 +35,7 @@ Main findings:
 | `scripts/03_stream_depth_controls/` | Text-stream depth curves, placebos, freeze controls, seed checks |
 | `scripts/04_additional_controls/` | Image-trajectory hybrid capture, late read-out, CFG rows, material, shared gate, set construction |
 | `scripts/05_followup_controls/` | 2×2 key/value factorial, text-only (image-pinned) capture, window length, prefix sweep, seeds, overlap sensitivity, unified metric, derived statistics (`derived_stats.py`) |
-| `scripts/figures/` | Figure generation (`cr_figures.py`: Fig. 1 with its numbers typed into the script, Figs. 2–4 read from the result JSONs; `f5_grids.py` → `f5_vectorize.py`: Fig. 5) |
+| `scripts/figures/` | Figure generation (`cr_figures.py`: Fig. 1 with its numbers typed into the script, Figs. 2–4 read from the result JSONs; `f5_candidates.py` → `f5_compose.py`: Fig. 5) |
 | `results/*.json` | Per-pair and aggregate results for every experiment in the paper |
 | `SCRIPTS.md` | One row per script: what it measures, the JSON it writes, and how to run it |
 
@@ -112,7 +112,7 @@ The figure script `scripts/figures/cr_figures.py`, `scripts/05_followup_controls
 | §8, shared-gate comparison | `04_additional_controls/shared_gate.py`, `holdout_purity.py` | `shared_gate.json`, `holdout_purity.json` |
 | Derived statistics (merges, splits, SDs, sensitivity rows) | `05_followup_controls/derived_stats.py` (CPU, from the shipped JSONs) | `derived_stats.json` |
 | Supplementary, key-only vs. value-only decomposition | `01_selection_sweeps/a4_decomp.py`, `a4_pixart.py` | `a4_decomp.json`, `pixart_a4.json` |
-| Figures | `figures/cr_figures.py` (Fig. 1: numbers typed into the script; Figs. 2–4: read from the result JSONs); `figures/f5_grids.py` (GPU) then `figures/f5_vectorize.py` (Fig. 5) | `results/figs/` |
+| Figures | `figures/cr_figures.py` (Fig. 1: numbers typed into the script; Figs. 2–4: read from the result JSONs); `figures/f5_candidates.py` (GPU; renders held-out candidate pairs at the measurement protocol and re-grades them) then `figures/f5_compose.py` (Fig. 5, pair 5029) | `results/figs/` |
 
 ## Citation
 
