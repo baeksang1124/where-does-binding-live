@@ -1,5 +1,5 @@
 """SD1.5 tiles for the qualitative Fig. 5 (one GPU): clean | top-1 head K/V swap | swapped prompt (+ all-head swap
-check) for the pairs in F5S_IDS (default 16, a base-set pair; held-out ids >= 5000 also work), rendered with the
+check) for the pairs in F5S_IDS (default 5072; base-set ids also work), rendered with the
 code path of scripts/02_heldout_generalization/top1_sd15_ext.py via f5_candidates.gen_sd15 and re-graded with its
 QwenGrader rule (o1 swap score). Writes results/figs/f5_candidates/<id>_sd15_<arm>.png and <id>_sd15_grades.json.
 
@@ -12,7 +12,7 @@ import f5_candidates as F
 from prompts import make_pairs
 from prompts_ext import make_ext_pairs
 
-IDS = [int(x) for x in os.environ.get("F5S_IDS", "16").split(",")]
+IDS = [int(x) for x in os.environ.get("F5S_IDS", "5072").split(",")]
 
 
 def main():

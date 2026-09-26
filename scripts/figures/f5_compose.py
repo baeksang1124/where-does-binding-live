@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 
 DIRS = ["results/figs/f5_candidates", "results/figs/f5_candidates_sd15extra"]
-SD15 = int(os.environ.get("F5_SD15_ID", 16))    # base-set pair, tiles from f5_sd15_tiles.py
+SD15 = int(os.environ.get("F5_SD15_ID", 5072))  # held-out pair passing the two-object gate; tiles from f5_sd15_tiles.py
 SD3 = int(os.environ.get("F5_SD3_ID", 5029))
 OUT = os.environ.get("F5_OUT", "results/figs/F5_grids.pdf")
 FS = float(os.environ.get("F5_FS", 8.5))   # label size; keep FS x (include width / figure width) >= 6 pt
