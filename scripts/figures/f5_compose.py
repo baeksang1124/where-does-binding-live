@@ -1,12 +1,16 @@
-"""Compose the Fig. 5 qualitative grid from tiles rendered by f5_candidates.py (no GPU).
+"""Compose the published Fig. 5 from pre-rendered tiles (CPU only).
 
-Rows (F5_ROWS, default "sd15,sd3"; add "pixart" for PixArt-Sigma, tiles from f5_pixart_tiles.py): SD1.5 (UNet),\nPixArt-Sigma (DiT, isolated cross-attention), SD3.5-medium (MM-DiT, joint attention).
-Columns: clean | target = the swapped prompt's own image (reference, not an intervention) | top-1 image-facing head
-K/V swap | text stream, blocks 9-15 (other blocks pinned clean; SD3.5 only). Every tile is a held-out pair rendered at the measurement protocol; the per-pair scores it
-shows are the stored ones (re-graded in results/figs/f5_candidates/candidates.json).
+Rows (F5_ROWS, default "sd15,pixart,sd3"): SD1.5 (UNet), PixArt-Sigma (DiT, isolated cross-attention), SD3.5-medium
+(MM-DiT, joint attention). Columns: clean | target = the swapped prompt's own image (a reference, not an intervention) |
+top-1 image-facing head K/V swap | text stream entering blocks 9-15, other blocks pinned clean (SD3.5 only).
+Defaults reproduce the paper: SD1.5 pair 5072 (F5_SD15_ID), PixArt-Sigma and SD3.5 pair 5029 (F5_PIX_ID, F5_SD3_ID),
+label size F5_FS = 8.5 pt; output F5_OUT (a .png is written next to the pdf).
 
-Env: F5_SD15_ID, F5_SD3_ID (pair ids), F5_OUT (pdf path; a .png is written next to it). Tiles are looked up in
-results/figs/f5_candidates/ and results/figs/f5_candidates_sd15extra/.
+Tile sources (all rendered with the measurement scripts' code paths and re-graded with Qwen):
+  SD1.5   f5_sd15_tiles.py   -> results/figs/f5_candidates/<id>_sd15_*.png  (+ <id>_sd15_grades.json)
+  PixArt  f5_pixart_tiles.py -> results/figs/f5_candidates/<id>_pixart_*.png (+ pixart_tiles.json)
+  SD3.5   f5_candidates.py   -> results/figs/f5_candidates/<id>_sd3_*.png    (+ candidates.json)
+Tiles are looked up in results/figs/f5_candidates/ (and results/figs/f5_candidates_sd15extra/ if present).
 Run: PYTHONPATH=. $PY scripts/figures/f5_compose.py
 """
 import os

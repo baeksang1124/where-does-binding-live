@@ -35,7 +35,7 @@ Main findings:
 | `scripts/03_stream_depth_controls/` | Text-stream depth curves, placebos, freeze controls, seed checks |
 | `scripts/04_additional_controls/` | Image-trajectory hybrid capture, late read-out, CFG rows, material, shared gate, set construction |
 | `scripts/05_followup_controls/` | 2×2 key/value factorial, text-only (image-pinned) capture, window length, prefix sweep, seeds, overlap sensitivity, unified metric, derived statistics (`derived_stats.py`) |
-| `scripts/figures/` | Figure generation (`cr_figures.py`: Fig. 1 with its numbers typed into the script, Figs. 2–4 read from the result JSONs; `f5_candidates.py` → `f5_compose.py`: Fig. 5) |
+| `scripts/figures/` | Figure generation (`cr_figures.py`: Fig. 1 with its numbers typed into the script, Figs. 2–4 read from the result JSONs; `f5_candidates.py`, `f5_sd15_tiles.py`, `f5_pixart_tiles.py` → `f5_compose.py`: Fig. 5) |
 | `results/*.json` | Per-pair and aggregate results for every experiment in the paper |
 | `SCRIPTS.md` | One row per script: what it measures, the JSON it writes, and how to run it |
 
@@ -91,7 +91,7 @@ The figure script `scripts/figures/cr_figures.py`, `scripts/05_followup_controls
 | Tab. 1, PixArt held-out / in-sample split (0.10 / 0.33) | `05_followup_controls/derived_stats.py`, from the `per_pair` values of `top1_pixart_ext.json` (ids ≥ 5000 are held-out; the file's own `mean`/`ci` are the combined value) | `derived_stats.json` |
 | Tab. 1, unified strict metric; grader agreement; second grader | `02_heldout_generalization/dual_grade_full.py` → `05_followup_controls/unified_strict_o1.py` | `dual_grade_full.json`, `unified_strict_o1.json` |
 | Fig. 2, in-sample top-k head curves | `01_selection_sweeps/run_sweep.py`, `single_pixart.py`, `single_sd3.py` | `sweep_results.json`, `pixart_single.json`, `sd3_single.json` |
-| §4, unpinned whole-block bound (≤ 0.11, in-sample); all-head bracket (33/35 base pairs) | `01_selection_sweeps/sweep_sd3.py` | `sd3_coarse.json` |
+| Abstract/§1, unpinned whole-block bound (≤ 0.11, in-sample); §2.2, all-head bracket (33/35 base pairs) | `01_selection_sweeps/sweep_sd3.py` | `sd3_coarse.json` |
 | §4, 576-head sweep | `01_selection_sweeps/headsweep_sd3.py` (576-head setting in `SCRIPTS.md`) | `sd3_headsweep.json` |
 | §4–5, all-block text stream (0.98, n = 30 in-sample) and in-sample single-block / prefix depth curves | `03_stream_depth_controls/stream_ci_sd3.py` run with `SD3_SUBSET=30`; CIs printed by `01_selection_sweeps/bootstrap_ci.py` | `sd3_stream_ci.json` |
 | §4–5, all-block placebo (0.00) and its potency | `03_stream_depth_controls/placebo_potency.py` | `placebo_potency.json` |
