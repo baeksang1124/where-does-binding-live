@@ -1,6 +1,6 @@
-# Where Is Binding Accessible to Intervention?
+# Where Does Binding Live?
 
-Code for **"Where Is Binding Accessible to Intervention? From UNet Cross-Attention Heads to the MM-DiT Text Stream"**
+Code for **"Where Does Binding Live? From UNet Cross-Attention Heads to the MM-DiT Text Stream"**
 (ACCV 2026).
 
 **Sangyeol Baek, Suan Lee** — School of Computer Science, Semyung University
@@ -118,7 +118,7 @@ The figure script `scripts/figures/cr_figures.py`, `scripts/05_followup_controls
 
 ```bibtex
 @inproceedings{baek2026binding,
-  title     = {Where Is Binding Accessible to Intervention? From {UNet} Cross-Attention Heads to the {MM-DiT} Text Stream},
+  title     = {Where Does Binding Live? From {UNet} Cross-Attention Heads to the {MM-DiT} Text Stream},
   author    = {Baek, Sangyeol and Lee, Suan},
   booktitle = {Proceedings of the Asian Conference on Computer Vision (ACCV)},
   year      = {2026}

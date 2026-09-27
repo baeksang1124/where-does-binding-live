@@ -1,6 +1,6 @@
 # SCRIPTS.md — script index
 
-Index of every script in this repository for *Where Is Binding Accessible to Intervention?
+Index of every script in this repository for *Where Does Binding Live?
 From UNet Cross-Attention Heads to the MM-DiT Text Stream*: what each one measures, the
 result file it writes, and how to run it.
 
