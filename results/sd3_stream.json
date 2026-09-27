@@ -100,5 +100,5 @@
     22,
     23
   ],
-  "verdict": "STREAM-LOCALIZED: an ISOLATED single block's text-stream injection flips binding (max 0.400 >> 0.114 K/V ceiling; 2 blocks >0.10) -> binding lives in the text stream/MLP at specific depth, not image-facing K/V (hypothesis SUPPORTED)"
+  "verdict": "STREAM-LOCALIZED: an ISOLATED single block's text-stream injection flips binding (max 0.400 >> 0.114 K/V ceiling; 2 blocks >0.10) -> binding is accessible to intervention in the text stream/MLP at specific depth, not image-facing K/V (hypothesis SUPPORTED)"
 }

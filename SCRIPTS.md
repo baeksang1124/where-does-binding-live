@@ -43,7 +43,7 @@ logs (`*.log`), images (PNG grids, per-pair images) and figures (`results/figs/`
 So the universal invocation is:
 
 ```bash
-cd where-is-binding-accessible          # the repo root
+cd where-does-binding-live              # the repo root
 export PY=python                        # or the full path of your environment's interpreter
 PYTHONPATH=. CUDA_VISIBLE_DEVICES=1 $PY scripts/<folder>/<name>.py
 ```

@@ -183,7 +183,7 @@ def main():
     best_iso = max(iso_mean.values())
     nz_iso = sum(1 for v in iso_mean.values() if v > 0.10)
     verdict = ("STREAM-LOCALIZED: an ISOLATED single block's text-stream injection flips binding "
-               f"(max {best_iso:.3f} >> 0.114 K/V ceiling; {nz_iso} blocks >0.10) -> binding lives "
+               f"(max {best_iso:.3f} >> 0.114 K/V ceiling; {nz_iso} blocks >0.10) -> binding is accessible to intervention "
                "in the text stream/MLP at specific depth, not image-facing K/V (hypothesis SUPPORTED)"
                if best_iso >= 0.35 else
                f"STREAM-DISTRIBUTED-IN-DEPTH: isolated single-block low (max {best_iso:.3f}); binding "
