@@ -19,7 +19,7 @@ result file it writes, and how to run it.
 │   ├── 02_heldout_generalization/     held-out top-1 / block-9 generalization + dual grading
 │   ├── 03_stream_depth_controls/      text-stream, freeze, placebo and depth controls
 │   ├── 04_additional_controls/        CFG rows, hybrid capture, late read window, material, shared gate
-│   ├── 05_followup_controls/          per-block image pinning, K/V factorial, window length, seeds
+│   ├── 05_followup_controls/          per-block image pinning, K/V factorial, window length, seeds, window controls
 │   └── figures/                       figure generation
 └── results/                           result JSONs (shipped); every run writes here
 ```
@@ -166,6 +166,8 @@ in parentheses are optional overrides; the value after `=` is the default.
 | `hyb2_prefix.py` | Prefix injection (blocks b..23) of the text-only (v2) stream and of the standard joint-state stream, paired on the same pairs. Not isolated: blocks before b run free (unlike `window_extension.py`, which pins the non-window blocks to the clean trace). | `results/hyb2_prefix.json` (b ∈ {0,3,6,9,12,15}); `results/hyb2_prefix_fine.json` (b ∈ {7,8,10,11}) | `PYTHONPATH=. CUDA_VISIBLE_DEVICES=1 $PY scripts/05_followup_controls/hyb2_prefix.py` (`HP_N=40`, `HP_BS=0,3,6,9,12,15`, `HP_SUFFIX`); fine file: `HP_BS=7,8,10,11 HP_SUFFIX=_fine` |
 | `window_extension.py` | Isolated injection window 9..e for e ∈ {11, 13, 15, 17, 23}, joint-state vs text-only stream, paired. | `results/window_extension.json` (first 40 of the 75 `block9_ext.py` pairs), `results/window_extension_p2.json` (the remaining 35), `results/window_extension_n75.json` (the two runs combined, n = 75; `derived_stats.py` recomputes the merge and checks it against this file) | `PYTHONPATH=. CUDA_VISIBLE_DEVICES=1 $PY scripts/05_followup_controls/window_extension.py` (`WE_N=40`, `WE_OFFSET=0`, `WE_SUFFIX`); second run: `WE_N=35 WE_OFFSET=40 WE_SUFFIX=_p2` |
 | `kv_factorial.py` | 2x2 factorial explaining the gap between the text window and the image-facing K/V window: pooled-CLIP `temb` (swapped vs clean) x text stream in non-window blocks (unpinned vs pinned clean), plus the raw text-stream window, on the same 75 held-out pairs. | `results/kv_factorial.json` | `PYTHONPATH=. CUDA_VISIBLE_DEVICES=1 $PY scripts/05_followup_controls/kv_factorial.py` (`KV_N=75`) |
+| `window_controls.py` | On the same 75 held-out pairs: the 9–15 third-colour placebo in the isolated window (the 9–11 placebo is re-run as a bracket against `window_placebo_paired.json`); the top-1 head (block 4, head 1) and all 24 heads of block 9 swapped under arm D of `kv_factorial.py` (clean `temb`, every block's text input pinned clean; the block-9 arm is checked pixel-identical to the isolated text-stream injection at block 9 and against `block9_ext.json`); and isolated 7-block windows starting at blocks 0, 3, 6, 8, 9, 10, 12, 14, 17 (9–15 checked against `window_extension_n75.json`). Stores Qwen's raw answers and image-hash prefixes for every arm; resumable per pair. | `results/window_controls.jsonl` (per pair), `results/window_controls.json` (summary; bootstrap seed 20261001, 1e5 resamples) | `PYTHONPATH=. CUDA_VISIBLE_DEVICES=1 $PY scripts/05_followup_controls/window_controls.py` (`WC_N=75`, `WC_OUT`) |
+| `window_controls_stats.py` | Per-pair 0/0.5/1 distributions, complete-swap counts and CIs, and paired differences against the 9–15 window, from `window_controls.jsonl` (1e5 resamples, seed 20261002). CPU only. | `results/window_controls_stats.json` | `PYTHONPATH=. $PY scripts/05_followup_controls/window_controls_stats.py` |
 | `seeds_followup.py` | Fresh-seed robustness: 40 held-out pairs x 3 seed offsets, re-qualified, windows 9–11 and 9–15, both streams, per-seed pair ids stored. | `results/seeds_followup.json` | `PYTHONPATH=. CUDA_VISIBLE_DEVICES=1 $PY scripts/05_followup_controls/seeds_followup.py` (`SF_N=40`) |
 | `freeze_presence.py` | Re-grades the `freeze_depth_sd3.py` sweep on the same pairs with explicit yes/no presence questions and a distinct-object count, alongside the original colour questions. | `results/freeze_presence.json` | `PYTHONPATH=. CUDA_VISIBLE_DEVICES=1 $PY scripts/05_followup_controls/freeze_presence.py` (`FP_SUBSET=10`) |
 | `holdout_overlap13.py` | Recomputes every held-out result without the 13/84 held-out pairs whose unordered {clean, swapped} prompt set appears in the selection set (vs 6/84 ordered in `holdout_purity.py`), including the matched image-facing 9–11 window. CPU only. | `results/holdout_overlap13.json` | `PYTHONPATH=. $PY scripts/05_followup_controls/holdout_overlap13.py` (see *One cross-folder import*) |
@@ -192,7 +194,8 @@ Figures are written to `results/figs/` (created on first run) and are not shippe
 ### Result-file inventory
 
 - **Raw grader answers** (the graders' text replies): `dual_grade_full.json` (both graders on the 141 held-out top-1-head
-  images: SD1.5 40, PixArt-Σ 26, SD3.5 75), `a4b_bleed.json`, `freeze_presence.json`.
+  images: SD1.5 40, PixArt-Σ 26, SD3.5 75), `a4b_bleed.json`, `freeze_presence.json`, `window_controls.jsonl` (Qwen's
+  replies and image-hash prefixes for every arm; its summary is `window_controls.json`).
 - **Canonicalised grader labels** (a colour word or `other`, not the text reply): `shared_gate.json`.
 - **Qualification records** (pair, seed, graded object and its intended colours; no grader replies): `qualified.json`,
   `qual_small.json`.
@@ -204,7 +207,7 @@ Figures are written to `results/figs/` (created on first run) and are not shippe
 - **Aggregate only** (no per-pair values): `sd3_headsweep.json`, `sd3_headsweep_144.json`, `sweep_results.json`,
   `pixart_sweep.json`, `pixart_single.json`, `sd3_single.json`, `pixart_a4.json`, `sd3_freeze_depth.json`,
   `sd3_stream.json`, `sd3_stream_material.json`, `validate_grader_sd3.json`, `validate_top1_dual.json`.
-- **Derived** (computed from other result files): `unified_strict_o1.json`, `derived_stats.json`,
+- **Derived** (computed from other result files): `unified_strict_o1.json`, `derived_stats.json`, `window_controls_stats.json`,
   `holdout_overlap13.json`, `holdout_purity.json`; `sd3_stream_ci.n10.bak.json` is an earlier 10-pair run kept for reference.
 
 ### Other files in `results/`

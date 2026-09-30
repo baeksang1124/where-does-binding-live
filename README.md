@@ -13,9 +13,9 @@ patching on clean ↔ attribute-swapped prompt pairs, graded by a VQA model, acr
 
 Main findings:
 
-- In SD3.5, binding is not accessible through any single image-facing head (best head 0.03 held-out), but it is at
+- In SD3.5, binding is not accessible through any screened single image-facing head (best head 0.03 held-out), but it is at
   **block-window granularity through the text stream**: replacing the text state entering blocks 9–11, with all other
-  blocks pinned to the clean stream, flips 0.30 of held-out swaps, a 9–15 window 0.62. A 2×2 control shows this is a
+  blocks pinned to the clean stream, flips 0.30 of held-out swaps, a 9–15 window 0.62 (0.44 above a matched placebo). A 2×2 control shows this is a
   granularity effect (clean-pinning), not a different channel.
 - A prefix sweep shows a sharp **commitment cliff** between blocks 9 and 10 (color binding).
 - The classic **single-head handle** is stable in the tested UNet (0.34 held-out) but does not generalize in either
@@ -34,7 +34,7 @@ Main findings:
 | `scripts/02_heldout_generalization/` | Held-out top-1 head and block tests, dual-grader re-scoring |
 | `scripts/03_stream_depth_controls/` | Text-stream depth curves, placebos, freeze controls, seed checks |
 | `scripts/04_additional_controls/` | Image-trajectory hybrid capture, late read-out, CFG rows, material, shared gate, set construction |
-| `scripts/05_followup_controls/` | 2×2 key/value factorial, text-only (image-pinned) capture, window length, prefix sweep, seeds, overlap sensitivity, unified metric, derived statistics (`derived_stats.py`) |
+| `scripts/05_followup_controls/` | 2×2 key/value factorial, text-only (image-pinned) capture, window length, prefix sweep, seeds, overlap sensitivity, unified metric, derived statistics (`derived_stats.py`), window controls (shifted windows, 9–15 placebo, clean-pinned head/block) |
 | `scripts/figures/` | Figure generation (`cr_figures.py`: Fig. 1 with its numbers typed into the script, Figs. 2–4 read from the result JSONs; `f5_candidates.py`, `f5_sd15_tiles.py`, `f5_pixart_tiles.py` → `f5_compose.py`: Fig. 5) |
 | `results/*.json` | Per-pair and aggregate results for every experiment in the paper |
 | `SCRIPTS.md` | One row per script: what it measures, the JSON it writes, and how to run it |
@@ -108,6 +108,7 @@ The figure script `scripts/figures/cr_figures.py`, `scripts/05_followup_controls
 | Fig. 4, prefix sweep / commitment cliff | `05_followup_controls/hyb2_prefix.py` | `hyb2_prefix.json`, `hyb2_prefix_fine.json` |
 | §5, naive single-block pilot without pinning (≥ 0.95, n = 10) | `stream_sd3.py` | `sd3_stream.json` (`prop_mean`) |
 | §5, window placebo and swap-specific excess | `03_stream_depth_controls/window_placebo_paired.py` | `window_placebo_paired.json` |
+| §4, clean-pinned top head and block 9; §5, shifted 7-block windows and the 9–15 placebo (Supp. Tab. S2) | `05_followup_controls/window_controls.py`; distributions and complete-swap CIs from `05_followup_controls/window_controls_stats.py` (CPU) | `window_controls.json`, `window_controls.jsonl`, `window_controls_stats.json` |
 | §5, late placebo (installation 0.00, 0/30; 0.72 from block 9) | `03_stream_depth_controls/matched_late_controls.py` (part B) | `matched_late.json` |
 | §5, alien-prompt read-out | `04_additional_controls/late_readwindow.py` | `late_readwindow.json` |
 | §5, CFG rows; material | `04_additional_controls/cfg_rows.py`, `material_ext.py`; material-vs-colour CI from `05_followup_controls/derived_stats.py` | `cfg_rows.json`, `material_ext.json`, `derived_stats.json` |
