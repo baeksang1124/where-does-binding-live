@@ -192,15 +192,20 @@ Figures are written to `results/figs/` (created on first run) and are not shippe
 ### Result-file inventory
 
 - **Raw grader answers** (the graders' text replies): `dual_grade_full.json` (both graders on the 141 held-out top-1-head
-  images: SD1.5 40, PixArt-Σ 26, SD3.5 75), `shared_gate.json`, `a4b_bleed.json`, `freeze_presence.json`,
-  `qualified.json`, `qual_small.json`.
+  images: SD1.5 40, PixArt-Σ 26, SD3.5 75), `a4b_bleed.json`, `freeze_presence.json`.
+- **Canonicalised grader labels** (a colour word or `other`, not the text reply): `shared_gate.json`.
+- **Qualification records** (pair, seed, graded object and its intended colours; no grader replies): `qualified.json`,
+  `qual_small.json`.
 - **Per-pair scores only** (no raw answers, no images): the window, prefix, placebo, 2×2, text-only, CFG-row, seed,
   material and late read-out files (`block9_ext`, `window_extension*`, `kv_factorial`, `window_placebo_*`, `matched_late`,
   `hyb2_prefix*`, `hybrid_stream`, `hybrid_v2`, `cfg_rows`, `seeds_followup`, `late_readwindow`, `material_ext`,
-  `multiseed_sd3_stream`, `placebo_potency`, `sd3_stream_ci`) and the top-1-head files (`top1_*`).
+  `multiseed_sd3_stream`, `placebo_potency`, `sd3_stream_ci`), the top-1-head files (`top1_*`), and `sd3_coarse`,
+  `a4_decomp`, `sd3_greedy`, `sd3_freeze`.
 - **Aggregate only** (no per-pair values): `sd3_headsweep.json`, `sd3_headsweep_144.json`, `sweep_results.json`,
   `pixart_sweep.json`, `pixart_single.json`, `sd3_single.json`, `pixart_a4.json`, `sd3_freeze_depth.json`,
-  `validate_grader_sd3.json`, `validate_top1_dual.json`.
+  `sd3_stream.json`, `sd3_stream_material.json`, `validate_grader_sd3.json`, `validate_top1_dual.json`.
+- **Derived** (computed from other result files): `unified_strict_o1.json`, `derived_stats.json`,
+  `holdout_overlap13.json`, `holdout_purity.json`; `sd3_stream_ci.n10.bak.json` is an earlier 10-pair run kept for reference.
 
 ### Other files in `results/`
 
