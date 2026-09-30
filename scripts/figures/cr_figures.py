@@ -75,7 +75,7 @@ def fig3():
     ends = we["ends"]; xs_b = list(range(len(ends)))
     mj = band(b, xs_b, [we["ci"][f"std_e{e}"] for e in ends], C["joint"], "joint-state stream")
     mt = band(b, xs_b, [we["ci"][f"hyb2_e{e}"] for e in ends], C["textonly"], "text-only stream\n(image pinned clean)")
-    b.axhline(0.027, color=C["muted"], lw=0.8, ls="--"); b.text(xs_b[-1], 0.05, "best single head 0.03", color=C["ink2"], fontsize=6.5, ha="right")
+    b.axhline(0.027, color=C["muted"], lw=0.8, ls="--"); b.text(xs_b[-1], 0.05, "top-ranked head 0.03", color=C["ink2"], fontsize=6.5, ha="right")
     b.set_xticks(xs_b); b.set_xticklabels([f"9–{e}" for e in ends]); b.set_xlim(-0.3, len(ends) - 0.7); b.set_ylim(0, 1.0)
     b.set_xlabel("isolated injection window (blocks)"); b.set_ylabel("")
     b.set_title("(b) window length", loc="left")
@@ -110,7 +110,7 @@ def fig4():
 # ---------------- F2: in-sample top-k head curves (ported from plot_figures.py, paper style) ----------------
 def fig2():
     sd15 = load("sweep_results.json")["head_cum"]        # [[k,v]...], ranking set n=35
-    px = load("pixart_single.json")["cum_mean"]          # {k:v}, ranking set n=11
+    px = load("pixart_single.json")["cum_mean"]          # {k:v}, curve n=11 (ranking n=8)
     sd35 = load("sd3_single.json")["cum_mean"]           # {k:v}, n=12
     kx15, ky15 = zip(*sd15)
     kpx = sorted(int(k) for k in px); vpx = [px[str(k)] for k in kpx]

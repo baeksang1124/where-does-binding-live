@@ -39,8 +39,11 @@ Main findings:
 | `results/*.json` | Per-pair and aggregate results for every experiment in the paper |
 | `SCRIPTS.md` | One row per script: what it measures, the JSON it writes, and how to run it |
 
-Not included: generated images (every image is regenerated deterministically from the pair's seed), model weights
-(downloaded from Hugging Face on first use) and the paper sources.
+Not included: generated images (every image is regenerated from the pair's fixed seed; on our setup regeneration was
+pixel-identical on a checked pair, but bit-identity across GPUs or library versions is not guaranteed, since PyTorch
+deterministic algorithms are not enabled), model weights (downloaded from Hugging Face on first use, at the pinned
+revisions below) and the paper sources. Raw grader answers are stored only for some experiments (see the result-file
+inventory in `SCRIPTS.md`).
 
 ## Install
 
@@ -59,19 +62,21 @@ diffusers 0.38.0 and transformers 4.57.1. SD3.5-medium is a gated model: accept 
 |---|---|---|
 | SD1.5 | `sd-legacy/stable-diffusion-v1-5` (`451f4fe`) | DDIM scheduler |
 | PixArt-Σ | transformer of `PixArt-alpha/PixArt-Sigma-XL-2-512-MS` (`76fb7eb`); T5, VAE and scheduler of `PixArt-alpha/PixArt-Sigma-XL-2-1024-MS` (`e102b35`) | DPM-Solver multistep |
-| SD3.5 | `stabilityai/stable-diffusion-3.5-medium` (`b940f67`) | T5 encoder disabled (CLIP encoders only); FlowMatch Euler, shift 3 |
+| SD3.5 | `stabilityai/stable-diffusion-3.5-medium` (`b940f67`) | MMDiT-X variant: blocks 0–12 add an image-only self-attention (`attn2`), left unpatched; T5 encoder disabled (CLIP encoders only); FlowMatch Euler, shift 3 |
 | Primary grader | `Qwen/Qwen2.5-VL-7B-Instruct` (`cc59489`) | per-object color question; 4-bit NF4 (bitsandbytes) |
 | Second grader | `llava-hf/llava-1.5-7b-hf` (`b234b80`) | fp16 |
+| Sanity grader | `openai/clip-vit-large-patch14` (`32bd642`) | setup checks only |
 
-The loaders do not pass `revision=`, so they fetch the current revision of each repository; pinning `revision=` to the
-commits above in the loaders' `from_pretrained` calls reproduces these exact checkpoints.
+The loaders pin `revision=` to these commits (full hashes in `revisions.py`), so a default run fetches the paper's exact
+checkpoints. `sd-legacy/stable-diffusion-v1-5` now redirects to `stable-diffusion-v1-5/stable-diffusion-v1-5` (same commit).
 
 ## Running
 
 Every script is run **from the repository root** with the root on `PYTHONPATH` (the core modules are imported by
 bare name). Each script that produces a result writes its own `results/*.json` (most also append to a `.log`);
 re-running a script overwrites its JSON. This matters most for `headsweep_sd3.py` and `stream_ci_sd3.py`, whose default settings do not reproduce the
-shipped files: see `SCRIPTS.md` for the settings that do.
+shipped files: see `SCRIPTS.md` for the settings that do. The shipped JSONs are version-controlled, so `git diff results/`
+shows what a re-run changed and `git checkout -- results/` restores the released files.
 
 ```bash
 export PY=python   # the interpreter of your environment

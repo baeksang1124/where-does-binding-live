@@ -19,6 +19,7 @@ mask that must flow into SDPA; (b) newer diffusers Attention may carry norm_q/no
 import torch
 import torch.nn.functional as F
 from diffusers import PixArtSigmaPipeline, PixArtTransformer2DModel
+from revisions import REVISION
 
 
 class Controller:
@@ -156,8 +157,9 @@ def load_pipe(device="cuda", res=512):
     base = "PixArt-alpha/PixArt-Sigma-XL-2-1024-MS"
     tf = PixArtTransformer2DModel.from_pretrained(
         "PixArt-alpha/PixArt-Sigma-XL-2-512-MS", subfolder="transformer",
-        torch_dtype=torch.float16)
-    pipe = PixArtSigmaPipeline.from_pretrained(base, transformer=tf, torch_dtype=torch.float16)
+        revision=REVISION["PixArt-alpha/PixArt-Sigma-XL-2-512-MS"], torch_dtype=torch.float16)
+    pipe = PixArtSigmaPipeline.from_pretrained(base, revision=REVISION[base], transformer=tf,
+                                               torch_dtype=torch.float16)
     pipe = pipe.to(device)
     pipe.set_progress_bar_config(disable=True)
     return pipe

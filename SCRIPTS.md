@@ -163,7 +163,7 @@ in parentheses are optional overrides; the value after `=` is the default.
 | script | what it measures | result file | how to run |
 | --- | --- | --- | --- |
 | `hybrid_v2.py` | Hybrid capture v2: the image hidden state entering every block is pinned to the clean run's value (per block, per step) while the text stream is recomputed under the swapped prompt; tensor-level brackets, then injection at the 9–11 window and at all blocks. | `results/hybrid_v2.json` | `PYTHONPATH=. CUDA_VISIBLE_DEVICES=1 $PY scripts/05_followup_controls/hybrid_v2.py` (`HYB2_N=40`) |
-| `hyb2_prefix.py` | Prefix injection (blocks b..23) of the text-only (v2) stream and of the standard joint-state stream, paired on the same pairs. | `results/hyb2_prefix.json` (b ∈ {0,3,6,9,12,15}); `results/hyb2_prefix_fine.json` (b ∈ {7,8,10,11}) | `PYTHONPATH=. CUDA_VISIBLE_DEVICES=1 $PY scripts/05_followup_controls/hyb2_prefix.py` (`HP_N=40`, `HP_BS=0,3,6,9,12,15`, `HP_SUFFIX`); fine file: `HP_BS=7,8,10,11 HP_SUFFIX=_fine` |
+| `hyb2_prefix.py` | Prefix injection (blocks b..23) of the text-only (v2) stream and of the standard joint-state stream, paired on the same pairs. Not isolated: blocks before b run free (unlike `window_extension.py`, which pins the non-window blocks to the clean trace). | `results/hyb2_prefix.json` (b ∈ {0,3,6,9,12,15}); `results/hyb2_prefix_fine.json` (b ∈ {7,8,10,11}) | `PYTHONPATH=. CUDA_VISIBLE_DEVICES=1 $PY scripts/05_followup_controls/hyb2_prefix.py` (`HP_N=40`, `HP_BS=0,3,6,9,12,15`, `HP_SUFFIX`); fine file: `HP_BS=7,8,10,11 HP_SUFFIX=_fine` |
 | `window_extension.py` | Isolated injection window 9..e for e ∈ {11, 13, 15, 17, 23}, joint-state vs text-only stream, paired. | `results/window_extension.json` (first 40 of the 75 `block9_ext.py` pairs), `results/window_extension_p2.json` (the remaining 35), `results/window_extension_n75.json` (the two runs combined, n = 75; `derived_stats.py` recomputes the merge and checks it against this file) | `PYTHONPATH=. CUDA_VISIBLE_DEVICES=1 $PY scripts/05_followup_controls/window_extension.py` (`WE_N=40`, `WE_OFFSET=0`, `WE_SUFFIX`); second run: `WE_N=35 WE_OFFSET=40 WE_SUFFIX=_p2` |
 | `kv_factorial.py` | 2x2 factorial explaining the gap between the text window and the image-facing K/V window: pooled-CLIP `temb` (swapped vs clean) x text stream in non-window blocks (unpinned vs pinned clean), plus the raw text-stream window, on the same 75 held-out pairs. | `results/kv_factorial.json` | `PYTHONPATH=. CUDA_VISIBLE_DEVICES=1 $PY scripts/05_followup_controls/kv_factorial.py` (`KV_N=75`) |
 | `seeds_followup.py` | Fresh-seed robustness: 40 held-out pairs x 3 seed offsets, re-qualified, windows 9–11 and 9–15, both streams, per-seed pair ids stored. | `results/seeds_followup.json` | `PYTHONPATH=. CUDA_VISIBLE_DEVICES=1 $PY scripts/05_followup_controls/seeds_followup.py` (`SF_N=40`) |
@@ -188,6 +188,19 @@ Figures are written to `results/figs/` (created on first run) and are not shippe
 | `f5_sd15_tiles.py` | Fig. 5 SD1.5 row: clean / top-1 head swap / swapped-prompt tiles for any pair ids (base or held-out) with the `top1_sd15_ext.py` code path, re-graded with Qwen (o1 rule). | `results/figs/f5_candidates/<id>_sd15_*.png`, `<id>_sd15_grades.json` | `PYTHONPATH=. CUDA_VISIBLE_DEVICES=0 $PY scripts/figures/f5_sd15_tiles.py` (`F5S_IDS`) |
 | `f5_compose.py` | Composes the published Fig. 5 from the candidate tiles (defaults: SD1.5 pair 5072, PixArt-Σ and SD3.5 pair 5029, three rows, 8.5 pt labels; column 2 is the target = swapped-prompt reference); CPU only. | `results/figs/F5_grids.pdf` | `PYTHONPATH=. $PY scripts/figures/f5_compose.py` (`F5_ROWS`, `F5_SD15_ID`, `F5_PIX_ID`, `F5_SD3_ID`, `F5_FS`, `F5_OUT`) |
 | `make_figs.py` | SD1.5 localization curves and example image grids from `sweep_results.json`; run after `run_sweep.py`. | `results/localization_curves.png`, `results/top_head_grids.png` | `PYTHONPATH=. CUDA_VISIBLE_DEVICES=1 $PY scripts/figures/make_figs.py` |
+
+### Result-file inventory
+
+- **Raw grader answers** (the graders' text replies): `dual_grade_full.json` (both graders on the 141 held-out top-1-head
+  images: SD1.5 40, PixArt-Σ 26, SD3.5 75), `shared_gate.json`, `a4b_bleed.json`, `freeze_presence.json`,
+  `qualified.json`, `qual_small.json`.
+- **Per-pair scores only** (no raw answers, no images): the window, prefix, placebo, 2×2, text-only, CFG-row, seed,
+  material and late read-out files (`block9_ext`, `window_extension*`, `kv_factorial`, `window_placebo_*`, `matched_late`,
+  `hyb2_prefix*`, `hybrid_stream`, `hybrid_v2`, `cfg_rows`, `seeds_followup`, `late_readwindow`, `material_ext`,
+  `multiseed_sd3_stream`, `placebo_potency`, `sd3_stream_ci`) and the top-1-head files (`top1_*`).
+- **Aggregate only** (no per-pair values): `sd3_headsweep.json`, `sd3_headsweep_144.json`, `sweep_results.json`,
+  `pixart_sweep.json`, `pixart_single.json`, `sd3_single.json`, `pixart_a4.json`, `sd3_freeze_depth.json`,
+  `validate_grader_sd3.json`, `validate_top1_dual.json`.
 
 ### Other files in `results/`
 

@@ -6,7 +6,8 @@ hybrid_stream.py (v1) pinned only the step-end latent, so within a step blocks 0
 processed that latent with the swapped prompt: the image state entering block 9 equalled the
 swapped run's, not the clean run's, and the final-image L1=0 bracket was tautological
 (the last step's latent is overwritten). v2 pins hidden_states at every block input via a
-forward pre-hook, so the captured text stream at block b has attended only to clean image K/V.
+forward pre-hook, so the captured text stream at block b has attended only to clean image hidden states
+(their K/V still carry the swapped run's pooled AdaLN modulation).
 Brackets are at the TENSOR level, not the final image:
   B1  v2 capture under the CLEAN prompt reproduces the clean text stream bit-for-bit
   B2  the pin fired 24 blocks x 28 steps per capture

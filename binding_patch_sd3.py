@@ -33,6 +33,7 @@ A single (block, head) swap changes only that head's text K/V rows.
 import torch
 import torch.nn.functional as F
 from diffusers import StableDiffusion3Pipeline
+from revisions import REVISION
 
 
 class Controller:
@@ -183,7 +184,8 @@ class JointHeadSwapProcessor:
 
 def load_pipe(model_id="stabilityai/stable-diffusion-3.5-medium", device="cuda"):
     pipe = StableDiffusion3Pipeline.from_pretrained(
-        model_id, text_encoder_3=None, tokenizer_3=None, torch_dtype=torch.float16)
+        model_id, revision=REVISION.get(model_id), text_encoder_3=None, tokenizer_3=None,
+        torch_dtype=torch.float16)
     pipe = pipe.to(device)
     pipe.set_progress_bar_config(disable=True)
     return pipe

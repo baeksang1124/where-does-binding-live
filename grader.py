@@ -8,14 +8,15 @@ CLIPGrader  -- sanity check only: whole-image caption similarity, flip = sim(swa
 """
 import torch
 from PIL import Image
+from revisions import REVISION
 
 
 class CLIPGrader:
     def __init__(self, model_id="openai/clip-vit-large-patch14", device="cuda"):
         from transformers import CLIPModel, CLIPProcessor
         self.device = device
-        self.model = CLIPModel.from_pretrained(model_id).to(device).eval()
-        self.proc = CLIPProcessor.from_pretrained(model_id)
+        self.model = CLIPModel.from_pretrained(model_id, revision=REVISION.get(model_id)).to(device).eval()
+        self.proc = CLIPProcessor.from_pretrained(model_id, revision=REVISION.get(model_id))
 
     @torch.no_grad()
     def _img_feat(self, img):
@@ -44,8 +45,8 @@ class LlavaGrader:
         from transformers import LlavaForConditionalGeneration, AutoProcessor
         self.device = device
         self.model = LlavaForConditionalGeneration.from_pretrained(
-            model_id, torch_dtype=torch.float16, device_map=device).eval()
-        self.proc = AutoProcessor.from_pretrained(model_id)
+            model_id, revision=REVISION.get(model_id), torch_dtype=torch.float16, device_map=device).eval()
+        self.proc = AutoProcessor.from_pretrained(model_id, revision=REVISION.get(model_id))
 
     @torch.no_grad()
     def _ask(self, img, question):
@@ -72,10 +73,10 @@ class QwenGrader:
                                   bnb_4bit_compute_dtype=torch.bfloat16,
                                   bnb_4bit_use_double_quant=True)
         self.model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
-            model_id, quantization_config=qcfg, device_map=device).eval()
+            model_id, revision=REVISION.get(model_id), quantization_config=qcfg, device_map=device).eval()
         # cap vision tokens to keep memory/latency low (512px images don't need more)
         self.proc = AutoProcessor.from_pretrained(
-            model_id, min_pixels=256 * 28 * 28, max_pixels=768 * 28 * 28)
+            model_id, revision=REVISION.get(model_id), min_pixels=256 * 28 * 28, max_pixels=768 * 28 * 28)
 
     @torch.no_grad()
     def _ask(self, img, question):

@@ -16,6 +16,7 @@ A single head H swapped changes ONLY head H's K/V contribution; all other heads 
 import torch
 import torch.nn.functional as F
 from diffusers import StableDiffusionPipeline, DDIMScheduler
+from revisions import REVISION
 
 
 class Controller:
@@ -166,7 +167,7 @@ class HeadSwapProcessor:
 
 def load_pipe(model_id="sd-legacy/stable-diffusion-v1-5", device="cuda"):
     pipe = StableDiffusionPipeline.from_pretrained(
-        model_id, torch_dtype=torch.float16, safety_checker=None)
+        model_id, revision=REVISION.get(model_id), torch_dtype=torch.float16, safety_checker=None)
     pipe.scheduler = DDIMScheduler.from_config(pipe.scheduler.config)
     pipe = pipe.to(device)
     pipe.set_progress_bar_config(disable=True)
