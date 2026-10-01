@@ -6,5 +6,6 @@ results/**/*.png
 results/*.log
 results/*.out
 results/*.stdout
+results/*_review.csv
 .omc/
 *.whl

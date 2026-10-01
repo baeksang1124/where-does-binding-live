@@ -109,6 +109,7 @@ The figure script `scripts/figures/cr_figures.py`, `scripts/05_followup_controls
 | §5, naive single-block pilot without pinning (≥ 0.95, n = 10) | `stream_sd3.py` | `sd3_stream.json` (`prop_mean`) |
 | §5, window placebo and swap-specific excess | `03_stream_depth_controls/window_placebo_paired.py` | `window_placebo_paired.json` |
 | §4, clean-pinned top head and block 9; §5, shifted 7-block windows and the 9–15 placebo (Supp. Tab. S2) | `05_followup_controls/window_controls.py`; distributions and complete-swap CIs from `05_followup_controls/window_controls_stats.py` (CPU) | `window_controls.json`, `window_controls.jsonl`, `window_controls_stats.json` |
+| §8 and Supp. Tab. S3, second grader (LLaVA) on the regenerated 9–11 / 9–15 windows, both window placebos and the b = 9 / 10 prefix arms | `05_followup_controls/second_grader_windows.py` | `second_grader_windows.json`, `second_grader_windows_qwen.jsonl`, `second_grader_windows_llava.jsonl` |
 | §5, late placebo (installation 0.00, 0/30; 0.72 from block 9) | `03_stream_depth_controls/matched_late_controls.py` (part B) | `matched_late.json` |
 | §5, alien-prompt read-out | `04_additional_controls/late_readwindow.py` | `late_readwindow.json` |
 | §5, CFG rows; material | `04_additional_controls/cfg_rows.py`, `material_ext.py`; material-vs-colour CI from `05_followup_controls/derived_stats.py` | `cfg_rows.json`, `material_ext.json`, `derived_stats.json` |
