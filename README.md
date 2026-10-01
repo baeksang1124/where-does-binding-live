@@ -17,7 +17,7 @@ Main findings:
   **block-window granularity through the text stream**: replacing the text state entering blocks 9–11, with all other
   blocks pinned to the clean stream, flips 0.30 of held-out swaps, a 9–15 window 0.62 (0.44 above a matched placebo). A 2×2 control shows this is a
   granularity effect (clean-pinning), not a different channel.
-- A prefix sweep shows a sharp **commitment cliff** between blocks 9 and 10 (color binding).
+- A starting-block ("prefix") sweep shows a sharp **commitment cliff** between blocks 9 and 10 (color binding).
 - The classic **single-head handle** is stable in the tested UNet (0.34 held-out) but does not generalize in either
   tested DiT (0.10 PixArt-Σ, 0.03 SD3.5).
 
@@ -34,7 +34,7 @@ Main findings:
 | `scripts/02_heldout_generalization/` | Held-out top-1 head and block tests, dual-grader re-scoring |
 | `scripts/03_stream_depth_controls/` | Text-stream depth curves, placebos, freeze controls, seed checks |
 | `scripts/04_additional_controls/` | Image-trajectory hybrid capture, late read-out, CFG rows, material, shared gate, set construction |
-| `scripts/05_followup_controls/` | 2×2 key/value factorial, image-pinned capture (`hyb2`; logged as "text-only" by the scripts), window length, prefix sweep, seeds, overlap sensitivity, unified metric, derived statistics (`derived_stats.py`), window controls (shifted windows, 9–15 placebo, clean-pinned head/block) |
+| `scripts/05_followup_controls/` | 2×2 key/value factorial, image-pinned capture (`hyb2`; logged as "text-only" by the scripts), window length, starting-block (prefix) sweep, seeds, overlap sensitivity, unified metric, derived statistics (`derived_stats.py`), window controls (shifted windows, 9–15 placebo, clean-pinned head/block) |
 | `scripts/figures/` | Figure generation (`cr_figures.py`: Fig. 1 with its numbers typed into the script, Figs. 2–4 read from the result JSONs; `f5_candidates.py`, `f5_sd15_tiles.py`, `f5_pixart_tiles.py` → `f5_compose.py`: Fig. 5) |
 | `results/*.json` | Per-pair and aggregate results for every experiment in the paper |
 | `SCRIPTS.md` | One row per script: what it measures, the JSON it writes, and how to run it |
@@ -98,18 +98,18 @@ The figure script `scripts/figures/cr_figures.py`, `scripts/05_followup_controls
 | Fig. 2, in-sample top-k head curves | `01_selection_sweeps/run_sweep.py`, `single_pixart.py`, `single_sd3.py` | `sweep_results.json`, `pixart_single.json`, `sd3_single.json` |
 | Abstract/§1, unpinned whole-block bound (≤ 0.11, in-sample); §2.2, all-head bracket (33/35 base pairs) | `01_selection_sweeps/sweep_sd3.py` | `sd3_coarse.json` |
 | §4, 576-head sweep | `01_selection_sweeps/headsweep_sd3.py` (576-head setting in `SCRIPTS.md`) | `sd3_headsweep.json` |
-| §4–5, all-block text stream (0.98, n = 30 in-sample) and in-sample single-block / prefix depth curves | `03_stream_depth_controls/stream_ci_sd3.py` run with `SD3_SUBSET=30`; CIs printed by `01_selection_sweeps/bootstrap_ci.py` | `sd3_stream_ci.json` |
+| §4–5, all-block text stream (0.98, n = 30 in-sample) and in-sample single-block / starting-block depth curves | `03_stream_depth_controls/stream_ci_sd3.py` run with `SD3_SUBSET=30`; CIs printed by `01_selection_sweeps/bootstrap_ci.py` | `sd3_stream_ci.json` |
 | §4–5, all-block placebo (0.00) and its potency | `03_stream_depth_controls/placebo_potency.py` | `placebo_potency.json` |
 | §4, all-block 1.00 on 40 held-out pairs; §5, latent-pin control (0.39) | `04_additional_controls/hybrid_stream.py` | `hybrid_stream.json` |
 | §4–5, held-out block 9 and window 9–11 (text stream) | `02_heldout_generalization/block9_ext.py` | `block9_ext.json` |
 | §4, image-facing key/value window 9–11 (0.17) | `03_stream_depth_controls/matched_late_controls.py` (part A) | `matched_late.json` (also arm A of `kv_factorial.json`) |
 | Fig. 3a, 2×2 control (normalisation × pinning) | `05_followup_controls/kv_factorial.py` | `kv_factorial.json` |
 | Fig. 3b, window length, joint-state vs. image-pinned stream | `05_followup_controls/window_extension.py` writes `window_extension.json` (40 pairs) and, with `WE_N=35 WE_OFFSET=40 WE_SUFFIX=_p2`, `window_extension_p2.json` (35 pairs); the n = 75 merge `window_extension_n75.json` is recomputed and checked against the shipped file by `05_followup_controls/derived_stats.py`; `hybrid_v2.py` | `window_extension_n75.json`, `hybrid_v2.json` |
-| Fig. 4, prefix sweep / commitment cliff | `05_followup_controls/hyb2_prefix.py` | `hyb2_prefix.json`, `hyb2_prefix_fine.json` |
+| Fig. 4, starting-block (prefix) sweep / commitment cliff | `05_followup_controls/hyb2_prefix.py` | `hyb2_prefix.json`, `hyb2_prefix_fine.json` |
 | §5, naive single-block pilot without pinning (≥ 0.95, n = 10) | `stream_sd3.py` | `sd3_stream.json` (`prop_mean`) |
 | §5, window placebo and swap-specific excess | `03_stream_depth_controls/window_placebo_paired.py` | `window_placebo_paired.json` |
 | §4, clean-pinned top head and block 9; §5, shifted 7-block windows and the 9–15 placebo (Supp. Tab. S2) | `05_followup_controls/window_controls.py`; distributions and complete-swap CIs from `05_followup_controls/window_controls_stats.py` (CPU) | `window_controls.json`, `window_controls.jsonl`, `window_controls_stats.json` |
-| §8 and Supp. Tab. S3, second grader (LLaVA) on the regenerated 9–11 / 9–15 windows, both window placebos and the b = 9 / 10 prefix arms | `05_followup_controls/second_grader_windows.py` | `second_grader_windows.json`, `second_grader_windows_qwen.jsonl`, `second_grader_windows_llava.jsonl` |
+| §8 and Supp. Tab. S3, second grader (LLaVA) on the regenerated 9–11 / 9–15 windows, both window placebos and the b = 9 / 10 starting-block arms | `05_followup_controls/second_grader_windows.py` | `second_grader_windows.json`, `second_grader_windows_qwen.jsonl`, `second_grader_windows_llava.jsonl` |
 | §5, late placebo (installation 0.00, 0/30; 0.72 from block 9) | `03_stream_depth_controls/matched_late_controls.py` (part B) | `matched_late.json` |
 | §5, alien-prompt read-out | `04_additional_controls/late_readwindow.py` | `late_readwindow.json` |
 | §5, CFG rows; material | `04_additional_controls/cfg_rows.py`, `material_ext.py`; material-vs-colour CI from `05_followup_controls/derived_stats.py` | `cfg_rows.json`, `material_ext.json`, `derived_stats.json` |

@@ -101,7 +101,7 @@ def fig4():
     ax.set_xticks([0, 3, 6, 9, 12, 15]); ax.set_xlim(-0.5, 16); ax.set_ylim(0, 1.1)
     ax.set_xlabel("inject swapped text stream from block b onward")
     ax.set_ylabel("binding-swap recovery")
-    ax.set_title("prefix injection, block b onward", loc="left")
+    ax.set_title("starting-block sweep", loc="left")
     ax.legend(loc="lower left", handlelength=1.6)
     fig.tight_layout(); save(fig, "F4_commitment")
 
