@@ -71,10 +71,10 @@ def fig3():
     a.set_xticks(xs); a.set_xticklabels(labels, fontsize=6.5); a.set_ylim(0, 0.44)
     a.set_ylabel("binding-swap recovery"); a.set_title("(a) blocks 9–11, all heads", loc="left")
 
-    # (b) read-window length: isolated window 9..e, joint-state vs text-only stream
+    # (b) read-window length: isolated window 9..e, joint-state vs image-pinned stream
     ends = we["ends"]; xs_b = list(range(len(ends)))
     mj = band(b, xs_b, [we["ci"][f"std_e{e}"] for e in ends], C["joint"], "joint-state stream")
-    mt = band(b, xs_b, [we["ci"][f"hyb2_e{e}"] for e in ends], C["textonly"], "text-only stream\n(image pinned clean)")
+    mt = band(b, xs_b, [we["ci"][f"hyb2_e{e}"] for e in ends], C["textonly"], "image-pinned stream")
     b.axhline(0.027, color=C["muted"], lw=0.8, ls="--"); b.text(xs_b[-1], 0.05, "top-ranked head 0.03", color=C["ink2"], fontsize=6.5, ha="right")
     b.set_xticks(xs_b); b.set_xticklabels([f"9–{e}" for e in ends]); b.set_xlim(-0.3, len(ends) - 0.7); b.set_ylim(0, 1.0)
     b.set_xlabel("isolated injection window (blocks)"); b.set_ylabel("")
@@ -94,10 +94,10 @@ def fig4():
     fig, ax = plt.subplots(figsize=(TEXTW * 0.7, 2.3))
     ax.axvspan(9, 10, color=C["grid"], alpha=0.9, lw=0, zorder=0)
     mj = band(ax, bs, [ci("std", b) for b in bs], C["joint"], "joint-state stream")
-    mt = band(ax, bs, [ci("hyb2", b) for b in bs], C["textonly"], "text-only stream")
+    mt = band(ax, bs, [ci("hyb2", b) for b in bs], C["textonly"], "image-pinned stream")
     ax.text(10.4, 0.62, "cliff 9→10", fontsize=6.5, color=C["ink2"])
     ax.text(0, 1.035, "joint-state", color=C["joint"], fontsize=7)
-    ax.text(0, 0.80, "text-only", color=C["textonly"], fontsize=7)
+    ax.text(0, 0.80, "image-pinned", color=C["textonly"], fontsize=7)
     ax.set_xticks([0, 3, 6, 9, 12, 15]); ax.set_xlim(-0.5, 16); ax.set_ylim(0, 1.1)
     ax.set_xlabel("inject swapped text stream from block b onward")
     ax.set_ylabel("binding-swap recovery")

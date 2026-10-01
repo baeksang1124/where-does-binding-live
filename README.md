@@ -34,7 +34,7 @@ Main findings:
 | `scripts/02_heldout_generalization/` | Held-out top-1 head and block tests, dual-grader re-scoring |
 | `scripts/03_stream_depth_controls/` | Text-stream depth curves, placebos, freeze controls, seed checks |
 | `scripts/04_additional_controls/` | Image-trajectory hybrid capture, late read-out, CFG rows, material, shared gate, set construction |
-| `scripts/05_followup_controls/` | 2×2 key/value factorial, text-only (image-pinned) capture, window length, prefix sweep, seeds, overlap sensitivity, unified metric, derived statistics (`derived_stats.py`), window controls (shifted windows, 9–15 placebo, clean-pinned head/block) |
+| `scripts/05_followup_controls/` | 2×2 key/value factorial, image-pinned capture (`hyb2`; logged as "text-only" by the scripts), window length, prefix sweep, seeds, overlap sensitivity, unified metric, derived statistics (`derived_stats.py`), window controls (shifted windows, 9–15 placebo, clean-pinned head/block) |
 | `scripts/figures/` | Figure generation (`cr_figures.py`: Fig. 1 with its numbers typed into the script, Figs. 2–4 read from the result JSONs; `f5_candidates.py`, `f5_sd15_tiles.py`, `f5_pixart_tiles.py` → `f5_compose.py`: Fig. 5) |
 | `results/*.json` | Per-pair and aggregate results for every experiment in the paper |
 | `SCRIPTS.md` | One row per script: what it measures, the JSON it writes, and how to run it |
@@ -104,7 +104,7 @@ The figure script `scripts/figures/cr_figures.py`, `scripts/05_followup_controls
 | §4–5, held-out block 9 and window 9–11 (text stream) | `02_heldout_generalization/block9_ext.py` | `block9_ext.json` |
 | §4, image-facing key/value window 9–11 (0.17) | `03_stream_depth_controls/matched_late_controls.py` (part A) | `matched_late.json` (also arm A of `kv_factorial.json`) |
 | Fig. 3a, 2×2 control (normalisation × pinning) | `05_followup_controls/kv_factorial.py` | `kv_factorial.json` |
-| Fig. 3b, window length, joint-state vs. text-only stream | `05_followup_controls/window_extension.py` writes `window_extension.json` (40 pairs) and, with `WE_N=35 WE_OFFSET=40 WE_SUFFIX=_p2`, `window_extension_p2.json` (35 pairs); the n = 75 merge `window_extension_n75.json` is recomputed and checked against the shipped file by `05_followup_controls/derived_stats.py`; `hybrid_v2.py` | `window_extension_n75.json`, `hybrid_v2.json` |
+| Fig. 3b, window length, joint-state vs. image-pinned stream | `05_followup_controls/window_extension.py` writes `window_extension.json` (40 pairs) and, with `WE_N=35 WE_OFFSET=40 WE_SUFFIX=_p2`, `window_extension_p2.json` (35 pairs); the n = 75 merge `window_extension_n75.json` is recomputed and checked against the shipped file by `05_followup_controls/derived_stats.py`; `hybrid_v2.py` | `window_extension_n75.json`, `hybrid_v2.json` |
 | Fig. 4, prefix sweep / commitment cliff | `05_followup_controls/hyb2_prefix.py` | `hyb2_prefix.json`, `hyb2_prefix_fine.json` |
 | §5, naive single-block pilot without pinning (≥ 0.95, n = 10) | `stream_sd3.py` | `sd3_stream.json` (`prop_mean`) |
 | §5, window placebo and swap-specific excess | `03_stream_depth_controls/window_placebo_paired.py` | `window_placebo_paired.json` |
@@ -115,7 +115,7 @@ The figure script `scripts/figures/cr_figures.py`, `scripts/05_followup_controls
 | §5, CFG rows; material | `04_additional_controls/cfg_rows.py`, `material_ext.py`; material-vs-colour CI from `05_followup_controls/derived_stats.py` | `cfg_rows.json`, `material_ext.json`, `derived_stats.json` |
 | §5, fresh seeds | `03_stream_depth_controls/multiseed_sd3_stream.py` (all-block 1.00 per seed, 14/15/15 pairs re-qualified), `03_stream_depth_controls/window_placebo_seeds.py`, `05_followup_controls/seeds_followup.py`; the seed SDs as reported (ddof = 1) from `05_followup_controls/derived_stats.py` | `multiseed_sd3_stream.json`, `window_placebo_seeds.json`, `seeds_followup.json`, `derived_stats.json` |
 | §6, freeze control | `03_stream_depth_controls/freeze_depth_sd3.py`, `05_followup_controls/freeze_presence.py` | `sd3_freeze_depth.json`, `freeze_presence.json` |
-| §8, prompt-overlap sensitivity | `05_followup_controls/holdout_overlap13.py` (per-model and window rows); `05_followup_controls/derived_stats.py` (text-only vs. joint-state at n = 75 → 63; unified PixArt 0.12 → 0.05) | `holdout_overlap13.json`, `derived_stats.json` |
+| §8, prompt-overlap sensitivity | `05_followup_controls/holdout_overlap13.py` (per-model and window rows); `05_followup_controls/derived_stats.py` (image-pinned vs. joint-state at n = 75 → 63; unified PixArt 0.12 → 0.05) | `holdout_overlap13.json`, `derived_stats.json` |
 | §8, shared-gate comparison | `04_additional_controls/shared_gate.py`, `holdout_purity.py` | `shared_gate.json`, `holdout_purity.json` |
 | Derived statistics (merges, splits, SDs, sensitivity rows) | `05_followup_controls/derived_stats.py` (CPU, from the shipped JSONs) | `derived_stats.json` |
 | Supplementary, key-only vs. value-only decomposition | `01_selection_sweeps/a4_decomp.py`, `a4_pixart.py` | `a4_decomp.json`, `pixart_a4.json` |
